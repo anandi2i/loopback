@@ -1,0 +1,37 @@
+{
+  "name": "Action",
+  "plural": "Actions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "assignee": {
+      "type": "object",
+      "required": true
+    },
+    "n": {
+      "type": "number",
+      "required": true
+    },
+    "due_date": {
+      "type": "date",
+      "required": true
+    },
+    "priority": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
